@@ -1,0 +1,47 @@
+﻿<Window x:Class="Pipe.Demo.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Pipe.Demo"
+        mc:Ignorable="d"
+        Title="Pipe Demo" Height="450" Width="800">
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition />
+            <ColumnDefinition />
+        </Grid.ColumnDefinitions>
+        <GroupBox Header="Server" Grid.Column="0">
+            <DockPanel>
+                <StackPanel DockPanel.Dock="Top">
+                    <CheckBox IsChecked="{Binding Path=IsServerConnected}" IsEnabled="False">Connected</CheckBox>
+                    <Button Height="23" Width="120" Click="Server_Close_Button_Click" Name="ServerCloseButton">Close</Button>
+                    <Button Click="Server_Open_Button_Click" Height="23" Width="120" Name="ServerOpenButton">Open</Button>
+                    <Button Height="23" Width="120" Name="ServerRefreshButton" Click="ServerRefreshButton_Click">Refresh</Button>
+                </StackPanel>
+                <StackPanel DockPanel.Dock="Bottom" Orientation="Horizontal">
+                    <TextBox Width="220" Name="SendToClientsTextBox" />
+                    <Button Width="120" Height="23" Name="SendToClientsButton" Click="SendToClientsButton_Click">Send to clients</Button>
+                </StackPanel>
+                <TextBox DockPanel.Dock="Bottom" Text="{Binding Path=ServerOutputText}" TextWrapping="WrapWithOverflow"
+                         IsReadOnly="True" />
+            </DockPanel>
+        </GroupBox>
+        <GroupBox Header="Client 1" Grid.Column="1">
+            <DockPanel>
+                <StackPanel DockPanel.Dock="Top">
+                    <CheckBox IsChecked="{Binding Path=IsClient1Connected}" IsEnabled="False">Connected</CheckBox>
+                    <Button Width="120" Height="23" Click="Client1_Close_Button_Click" Name="ClientCloseButton">Close</Button>
+                    <Button Width="120" Height="23" Click="Client1_Open_Button_Click" Name="ClientOpenButton">Open</Button>
+                    <Button Width="120" Height="23" Name="Client1RefreshButton" Click="Client1RefreshButton_Click">Refresh</Button>
+                </StackPanel>
+                <StackPanel DockPanel.Dock="Bottom" Orientation="Horizontal">
+                    <TextBox Width="220" Name="SendToServerTextBox" />
+                    <Button Width="120" Height="23" Name="SendToServerButton" Click="SendToServerButton_Click">Send to server</Button>
+                </StackPanel>
+                <TextBox DockPanel.Dock="Bottom" Text="{Binding Path=Client1OutputText}"
+                         TextWrapping="WrapWithOverflow" IsReadOnly="True" />
+            </DockPanel>
+        </GroupBox>
+    </Grid>
+</Window>
