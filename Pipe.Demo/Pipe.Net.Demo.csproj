@@ -90,9 +90,9 @@
     </None>
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\Pipe\Pipe.csproj">
+    <ProjectReference Include="..\Pipe\Pipe.Net.csproj">
       <Project>{1b1b56d1-8a76-4140-981b-994abb73c8e8}</Project>
-      <Name>Pipe</Name>
+      <Name>Pipe.Net</Name>
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

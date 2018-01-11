@@ -1,0 +1,16 @@
+<?xml version="1.0"?>
+<package >
+  <metadata>
+    <id>$id$</id>
+    <version>$version$</version>
+    <title>$title$</title>
+    <authors>Graham McAllister</authors>
+    <owners>Graham McAllister</owners>
+    <licenseUrl>https://github.com/grahammcallister/Pipe.Net/blob/master/LICENSE</licenseUrl>
+    <projectUrl>https://github.com/grahammcallister/Pipe.Net</projectUrl>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <description>A simple C# named pipe server implementation that can be used to share data with Node.js instances</description>
+    <releaseNotes>Initial release</releaseNotes>
+    <tags>node.js csharp ipc named-pipes</tags>
+  </metadata>
+</package>

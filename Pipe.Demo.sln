@@ -3,11 +3,11 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
 VisualStudioVersion = 15.0.27130.2010
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Pipe.Demo", "Pipe.Demo\Pipe.Demo.csproj", "{AC4DE47C-0B08-4677-A266-AFF1071E22A0}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Pipe.Net.Demo", "Pipe.Demo\Pipe.Net.Demo.csproj", "{AC4DE47C-0B08-4677-A266-AFF1071E22A0}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Pipe", "Pipe\Pipe.csproj", "{1B1B56D1-8A76-4140-981B-994ABB73C8E8}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Pipe.Net", "Pipe\Pipe.Net.csproj", "{1B1B56D1-8A76-4140-981B-994ABB73C8E8}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Pipe.Test", "Pipe.Test\Pipe.Test.csproj", "{5AD9B050-8977-4FDE-8B14-729B72DF898B}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Pipe.Net.Test", "Pipe.Test\Pipe.Net.Test.csproj", "{5AD9B050-8977-4FDE-8B14-729B72DF898B}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

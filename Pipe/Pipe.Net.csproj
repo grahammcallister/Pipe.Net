@@ -7,8 +7,8 @@
     <ProjectGuid>{1B1B56D1-8A76-4140-981B-994ABB73C8E8}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>Pipe</RootNamespace>
-    <AssemblyName>Pipe</AssemblyName>
+    <RootNamespace>Pipe.Net</RootNamespace>
+    <AssemblyName>Pipe.Net</AssemblyName>
     <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
   </PropertyGroup>
@@ -46,6 +46,10 @@
     <Compile Include="PipeClient.cs" />
     <Compile Include="PipeServer.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="packages.config" />
+    <None Include="Pipe.Net.nuspec" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
