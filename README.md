@@ -1,7 +1,8 @@
 # Pipe.Net
 A simple C# named pipe server implementation that can be used to share data with Node.js instances
 
-Other projects doing something similar:
+Available as a NuGet package download on ![Nuget Gallery](https://www.nuget.org/packages/Pipe.Net/) here: [![https://www.nuget.org/packages/Pipe.Net/](https://www.nuget.org/packages/Pipe.Net/)](https://www.nuget.org/packages/Pipe.Net/) 
 
-Edge.js
-You can use Edge.js for full Node.js support from .Net. Edge allows in-memory sharing of data between .Net and Node applications. In contrast, Pipe.Net only allows .Net processes to send or receive data to or from Node using a named pipe.
+**Build status**
+
+[![Build status](https://ci.appveyor.com/api/projects/status/x3y5ewmb6nud47am?svg=true)](https://ci.appveyor.com/project/grahammcallister/pipe-net)
